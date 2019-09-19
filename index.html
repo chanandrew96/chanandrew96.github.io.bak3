@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Hello World</title>
+<!-- Import CSS Here -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+
+<body>
+	<div class="header"> 
+		<h3>This is the header</h3>
+	</div>
+	<div class="cardContainer">
+		<div class="informationCard">
+			<h4>Educational Qualifications</h4>
+			<hr />
+			<ul>
+				<li>University</li>
+				<li>High School</li>
+			</ul>
+		</div>
+		<div class="informationCard">
+			<h4>Working Experience</h4>
+			<hr />
+			<ul>
+				<li>First Company</li>
+				<li>Second Company</li>
+				<li>Third Company</li>
+			</ul>
+		</div>
+		<div class="informationCard">
+			<h4>Project</h4>
+			<hr />
+			<ul>
+				<li>First Project</li>
+				<li>Second Project</li>
+				<li>Third Project</li>
+			</ul>
+		</div>
+		<div class="informationCard">
+			<h4>Skills</h4>
+			<hr />
+			<ul>
+				<li>1
+				</li>
+			</ul>
+		</div>
+		<div class="overlay">
+			<h3>Resume</h3>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="contactInfo LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="cheuk-him-chan-4462b9116">
+			<a class="LI-simple-link" href='https://hk.linkedin.com/in/cheuk-him-chan-4462b9116?trk=profile-badge'>
+				Cheuk Him Chan</a>
+		</div>
+		<div class="contactInfo">
+			<a href="mailto:chanandrew96@yahoo.com.hk"><i class="far fa-envelope"></i>&nbsp;chanandrew96@yahoo.com.hk<a/> <br />
+			<a href=""><i class="fas fa-phone-alt"></i>&nbsp;852-0000-0000</a><br />
+			<a href="https://github.com/chanandrew96/"><img src="resources/images/GitHub-Mark-Light-32px.png" />&nbsp;chanandrew96</a>
+		</div>
+		<p>Website build on 2019/09/19</P>
+	</div>
+	
+	<script>
+	// Import JS Here
+	<!-- console.log("This is my own page!"); -->
+	
+	function hideObject(e) {
+		if (e.propertyName != 'opacity') return;
+		<!-- console.log(e.target.attributes); -->
+		<!-- e.target.attributes.style = "display: none"; -->
+		e.target.classList.add('hidden');
+	}
+	
+	
+	var overlay = document.querySelector('.overlay');
+	overlay.addEventListener('transitionend', hideObject);
+	
+	</script>
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js"></script>
+</body>
+</html>

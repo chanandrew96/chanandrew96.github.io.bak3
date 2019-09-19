@@ -1,0 +1,137 @@
+.header {
+	color: #93A392;
+	background-color: #607466;
+	display: block;
+	margin: 0px;
+	padding: 3px;
+	padding-left: 3%;
+	text-align: left;
+	font-family: Cornerstone;
+}
+
+.footer {
+	color: #93A392;
+	background-color: #607466;
+	display: Block;
+	margin: 0px;
+	padding: 3px;
+	font-size: 12px;
+}
+
+.footer p {
+	text-align: center;
+}
+
+.footer .contactInfo {
+	display: inline-block;
+	line-height: 200%;
+	font-size: 18px;
+}
+
+.cardContainer {
+	padding: 10px;
+	display: block;
+	position: relative;
+	text-align: center;
+}
+
+.overlay {
+	background-color: #607466;
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	
+	transition-property: display, opacity;
+	transition-duration: 0.3s;
+	float: 2;
+	display: block;
+}
+
+.overlay > h3 {
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.overlay:hover {
+	opacity: 0;
+}
+
+.informationCard {
+	background-color: #758173;
+	color: #93A392;
+	width: 20%;
+	min-width: 210px;
+	max-width: 350px;
+	min-height: 350px;
+	max-height: 500px;
+	height: 45%;
+	/* float: 1; */
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	
+	transition-property: opacity, transform;
+	transition-duration: 1s;
+	opacity: 0.6;
+	
+}
+
+.informationCard:hover {
+	opacity: 1;
+	transform: scale(1.2, 1.2);
+}
+
+.cardContainer:hover > .informationCard:not(:hover) {
+	opacity: 0.1;
+	transform: scale(0.5, 0.5);
+}
+
+.hidden {
+	display: none;
+}
+
+body {
+	color: #C5D5EA;
+	font-family: 'Gill Sans', Helvetica;
+	background-color: #343434;
+}
+
+ul {
+	text-align: left;
+	list-style-image: url(../resources/images/pencil-icon.png);	
+}
+
+ul li {
+	padding: 10px;
+}
+
+a {
+	color: white;
+	text-decoration-line: none;
+}
+
+@font-face {
+	font-family: Rembank;
+	src: url(../resources/fonts/Rembank.otf);
+	/* src: url(../resources/fonts/Rembank.otf) format('otf'); */
+}
+
+@font-face {
+	font-family: Cornerstone;
+	src: url(../resources/fonts/Cornerstone.ttf);
+}
+
+/*
+	Check out more font family and Importing new font here
+	Top 20 Most Popular Fonts Of All Time
+		https://www.lifehack.org/428846/top-20-most-popular-fonts-of-all-time
+	50 Free Modern Fonts
+		https://visme.co/blog/modern-fonts/
+	How to include a font .ttf using CSS?
+		https://stackoverflow.com/questions/24990554/how-to-include-a-font-ttf-using-css
+*/
